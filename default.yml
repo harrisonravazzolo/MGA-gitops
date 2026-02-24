@@ -12,7 +12,11 @@ org_settings:
   host_expiry_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/48d9316c-ffca-42bb-8ccf-5756239ec8be
   org_info:
-    org_name: Fleet
+    org_name: 🇳🇮
   secrets:
     - secret: "$FLEET_GLOBAL_ENROLL_SECRET"
