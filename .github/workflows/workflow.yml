@@ -28,7 +28,10 @@ jobs:
     steps:
       - name: Checkout GitOps repository
         uses: actions/checkout@v4
-
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          detached: true
       - name: Apply latest configuration to Fleet
         uses: ./.github/gitops-action
         with:
